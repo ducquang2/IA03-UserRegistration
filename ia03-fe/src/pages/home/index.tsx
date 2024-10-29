@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 function Home() {
   const [users, setUsers] = useState<{ id: string, email: string }[]>([]);
   const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
+  const [error, setError] = useState<{ message: string } | null>(null);
   const apiUrl = import.meta.env.VITE_API_URL;
 
   useEffect(() => {
@@ -16,7 +16,7 @@ function Home() {
         const data = await response.json();
         setUsers(data);
       } catch (error) {
-        setError(error);
+        setError({ message: (error as Error).message });
       } finally {
         setLoading(false);
       }
