@@ -8,7 +8,10 @@ async function bootstrap() {
   app.useGlobalPipes(new ValidationPipe());
 
   app.enableCors({
-    origin: '*',
+    origin: [
+      'https://ia-03-user-registration.vercel.app',
+      /\.ia-03-user-registration\.vercel\.app$/,
+    ],
   });
 
   await app.listen(process.env.PORT ?? 3000);
