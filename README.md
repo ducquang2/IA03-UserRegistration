@@ -25,6 +25,7 @@ API_URL=http://localhost:3001
 
 # BACKEND
 DATABASE_URL=postgres://username:password@localhost:5432/dbname
+CLIENT_DOMAIN=http://localhost:5173
 ```
 
 4. Run the following command to start the API
