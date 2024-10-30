@@ -8,7 +8,10 @@ async function bootstrap() {
   app.useGlobalPipes(new ValidationPipe());
 
   app.enableCors({
-    origin: process.env.CLIENT_DOMAIN ?? 'http://localhost:5173/',
+    origin: [
+      'https://ia-03-user-registration.vercel.app/',
+      'http://localhost:5173',
+    ],
   });
 
   await app.listen(process.env.PORT ?? 3000);
