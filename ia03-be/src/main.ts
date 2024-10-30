@@ -9,7 +9,8 @@ async function bootstrap() {
 
   app.enableCors({
     origin: [
-      'https://ia-03-user-registration.vercel.app/',
+      'https://ia-03-user-registration.vercel.app',
+      /\.ia-03-user-registration\.vercel\.app$/,
       'http://localhost:5173',
     ],
   });
