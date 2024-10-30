@@ -2,7 +2,7 @@ import { Link, Outlet } from "react-router-dom";
 
 function RootLayout() {
   return (
-    <>
+    <div className="h-dvh">
       <div className="h-12 bg-green-50 flex items-center justify-between px-4">
         <h3 className="font-medium">
           <Link to="/">IA03 - User RegisterForm</Link>
@@ -14,7 +14,7 @@ function RootLayout() {
         </nav>
       </div>
       <Outlet />
-    </>
+    </div>
   )
 }
 
