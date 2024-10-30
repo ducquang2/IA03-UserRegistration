@@ -39,6 +39,56 @@ cd ia03-be && yarn start:dev
 cd ia03-fe && yarn dev
 ```
 
+## Rubric
+
+<table>
+    <thead>
+        <tr>
+            <th>Implementation Type</th>
+            <th colspan=2>Criteria</th>
+            <th style="text-align: center;">Points</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td rowspan=2>Backend Implementation</td>
+            <td>API Endpoints</td>
+            <td>✅</td>
+            <td style="text-align: center;">2</td>
+        </tr>
+        <tr>
+            <td>Error Handling</td>
+            <td>✅</td>
+            <td style="text-align: center;">2</td>
+        </tr>
+        <tr>
+            <td rowspan=3>Frontend Implementation</td>
+            <td>Routing</td>
+            <td>✅</td>
+            <td style="text-align: center;">1</td>
+        </tr>
+        <tr>
+            <td>API Integration</td>
+            <td>✅</td>
+            <td style="text-align: center;">2</td>
+        </tr>
+        <tr>
+            <td>User Experience</td>
+            <td>✅</td>
+            <td style="text-align: center;">2</td>
+        </tr>
+        <tr>
+            <td colspan=2 style="text-align: center;">Public host deployment</td>
+            <td>✅</td>
+            <td style="text-align: center;">1</td>
+        </tr>
+        <tr>
+            <td colspan=3 style="text-align: center;font-weight: bold;">Total Points</td>
+            <td style="text-align: center;font-weight: bold;">10</td>
+        </tr>
+    </tbody>
+</table>
+
 ## Deployment
 
 - The API is deployed on [Render](https://dashboard.render.com/)
